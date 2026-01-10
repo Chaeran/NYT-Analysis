@@ -13,7 +13,7 @@
   <!-- Optional: visualization-specific styles -->
   <!-- <link rel="stylesheet" href="css/treemap.css" /> -->
   <!-- <link rel="stylesheet" href="css/keywordGraph.css" /> -->
-  <!-- <link rel="stylesheet" href="css/burst.css" /> -->
+  <link rel="stylesheet" href="css/burst.css" />
   <!-- <link rel="stylesheet" href="css/yearlyBar.css" /> -->
 </head>
 
@@ -64,6 +64,25 @@
     <h2>Keyword Dynamics Over Time</h2>
     <!-- Keyword burst / temporal trend chart will be rendered here -->
     <div id="burstChart" class="view-container"></div>
+    <!-- Controls for the burst chart -->
+        <div id="burstControls">
+        <label for="keyword-select">Keyword:</label>
+        <select id="keyword-select"></select>
+
+        <span style="margin-left:16px;">Mode:</span>
+        <label>
+            <input type="radio" name="mode" value="raw" checked />
+            Raw
+        </label>
+        <label style="margin-left:8px;">
+            <input type="radio" name="mode" value="normalized" />
+            Normalized
+        </label>
+        </div>
+
+        <!-- Tooltip for hover interactions -->
+        <div id="tooltip" class="tooltip" style="position:absolute; opacity:0;"></div>
+
   </section>
 
   <!-- ===================== -->
