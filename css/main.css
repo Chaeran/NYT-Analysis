@@ -1,0 +1,66 @@
+/* =============================== */
+/* Global page styles              */
+/* =============================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* =============================== */
+/* Page header                     */
+/* =============================== */
+
+header {
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+}
+
+header p {
+  margin: 0;
+  color: #555;
+}
+
+/* =============================== */
+/* Section layout                  */
+/* =============================== */
+
+section {
+  padding: 32px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* =============================== */
+/* Visualization container         */
+/* =============================== */
+
+.view-container {
+  width: 100%;
+  min-height: 400px; /* ensures space for each visualization */
+  position: relative;
+}
+
+/* =============================== */
+/* Utility / placeholder text      */
+/* =============================== */
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+}

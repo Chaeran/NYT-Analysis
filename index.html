@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NYT Visualization Dashboard</title>
+
+  <!-- Load D3.js library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Global and layout styles -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Optional: visualization-specific styles -->
+  <!-- <link rel="stylesheet" href="css/treemap.css" /> -->
+  <!-- <link rel="stylesheet" href="css/keywordGraph.css" /> -->
+  <!-- <link rel="stylesheet" href="css/burst.css" /> -->
+  <!-- <link rel="stylesheet" href="css/yearlyBar.css" /> -->
+</head>
+
+<body>
+
+  <!-- ===================== -->
+  <!-- Page Header / Title -->
+  <!-- ===================== -->
+  <header>
+    <h1>Exploring New York Times Coverage</h1>
+    <p>
+      This dashboard enables interactive exploration of New York Times articles
+      through sections, keyword relationships, and temporal trends.
+    </p>
+  </header>
+
+  <!-- ===================== -->
+  <!-- Section 1: Section Overview (Master View) -->
+  <!-- ===================== -->
+  <section id="section-context">
+    <h2>Article Distribution by Section</h2>
+    <!-- Section and Author Treemap will be rendered here -->
+    <div id="treemapArea" class="view-container"></div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- Section 2: Temporal Trends by Section -->
+  <!-- ===================== -->
+  <section id="section-trends">
+    <h2>Yearly Article Counts by Section</h2>
+    <!-- Yearly bar chart will be rendered here -->
+    <div id="yearlyBar" class="view-container"></div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- Section 3: Keyword Relationship Network -->
+  <!-- ===================== -->
+  <section id="section-keywords">
+    <h2>Keyword Relationship Network</h2>
+    <!-- Keyword co-occurrence graph will be rendered here -->
+    <div id="keywordGraph" class="view-container"></div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- Section 4: Keyword Dynamics Over Time -->
+  <!-- ===================== -->
+  <section id="section-burst">
+    <h2>Keyword Dynamics Over Time</h2>
+    <!-- Keyword burst / temporal trend chart will be rendered here -->
+    <div id="burstChart" class="view-container"></div>
+  </section>
+
+  <!-- ===================== -->
+  <!-- JavaScript Files -->
+  <!-- ===================== -->
+
+  <!-- Main script: shared state and coordinated view logic -->
+  <script src="js/main.js"></script>
+
+  <!-- Individual visualization scripts -->
+  <script src="js/views/treemap.js"></script>
+  <script src="js/views/yearlyBar.js"></script>
+  <script src="js/views/keywordGraph.js"></script>
+  <script src="js/views/burst.js"></script>
+
+</body>
+</html>
