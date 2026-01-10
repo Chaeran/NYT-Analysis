@@ -1,0 +1,28 @@
+body {
+  font-family: 'Arial', sans-serif; 
+}
+
+h3 {
+  text-align: center;
+  background: #f2f2f2;
+}
+
+h3:hover {  /* change color on hover*/
+
+  background: #d9d9d9;
+}
+
+rect:hover { filter: brightness(0.9); }  /* change color on hover*/
+
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1600px;
+  /*display: flex;*/
+  flex-wrap: wrap;
+  
+}
+
+
+
