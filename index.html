@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/treemap.css" />
   <!-- <link rel="stylesheet" href="css/keywordGraph.css" /> -->
   <link rel="stylesheet" href="css/burst.css" />
-  <!-- <link rel="stylesheet" href="css/yearlyBar.css" /> -->
+  <link rel="stylesheet" href="css/linechart.css" />
 </head>
 
 <body>
@@ -46,7 +46,11 @@
   <section id="section-trends">
     <h2>Yearly Article Counts by Section</h2>
     <!-- Yearly bar chart will be rendered here -->
-    <div id="yearlyBar" class="view-container"></div>
+     <div class="line-controls">
+        <label for="section-select">Section:</label>
+        <select id="section-select"></select>
+     </div>
+    <div id="yearlySection" class="view-container"></div>
   </section>
 
   <!-- ===================== -->
@@ -95,7 +99,7 @@
 
   <!-- Individual visualization scripts -->
   <script src="js/views/treemap.js"></script>
-  <script src="js/views/yearlyBar.js"></script>
+  <script src="js/views/linechart.js"></script>
   <script src="js/views/keywordGraph.js"></script>
   <script src="js/views/burst.js"></script>
 

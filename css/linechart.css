@@ -1,0 +1,27 @@
+#yearlySectionPanel .controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#section-select {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.tooltip {
+  position: absolute;
+  background: white;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 8px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: 600;
+  fill: #333;
+}
