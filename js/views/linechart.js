@@ -150,6 +150,7 @@ function initYearlySection(containerSelector) {
     window.updateYearlySection = function (state) {
       const sec = state.selectedSection || sections[0];
       update(prepareData(sec));
+      select.property("value", sec);
     };
   });
 }
