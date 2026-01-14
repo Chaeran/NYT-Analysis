@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>NYT Visualization Dashboard</title>
@@ -36,8 +37,8 @@
   <section id="section-context">
     <h2>Article Distribution by Section</h2>
     <!-- Section and Author Treemap will be rendered here -->
-     <h3 id="header" onclick="resetZoom()" >NYT Archive | All Sections</h1>
-    <div id="treemapArea" class="view-container"></div>
+    <h3 id="header" onclick="resetZoom()">NYT Archive | All Sections</h1>
+      <div id="treemapArea" class="view-container"></div>
   </section>
 
   <!-- ===================== -->
@@ -55,6 +56,11 @@
   <section id="section-keywords">
     <h2>Keyword Relationship Network</h2>
     <!-- Keyword co-occurrence graph will be rendered here -->
+    <label for="color-select">Color nodes by: </label>
+    <select id="color-select">
+      <option value="section">Dominant Section of the Keyword</option>
+      <option value="length">Median Word Count of Articles with the Keyword</option>
+    </select>
     <div id="keywordGraph" class="view-container"></div>
   </section>
 
@@ -66,23 +72,23 @@
     <!-- Keyword burst / temporal trend chart will be rendered here -->
     <div id="burstChart" class="view-container"></div>
     <!-- Controls for the burst chart -->
-        <div id="burstControls">
-        <label for="keyword-select">Keyword:</label>
-        <select id="keyword-select"></select>
+    <div id="burstControls">
+      <label for="keyword-select">Keyword:</label>
+      <select id="keyword-select"></select>
 
-        <span style="margin-left:16px;">Mode:</span>
-        <label>
-            <input type="radio" name="mode" value="raw" checked />
-            Raw
-        </label>
-        <label style="margin-left:8px;">
-            <input type="radio" name="mode" value="normalized" />
-            Normalized
-        </label>
-        </div>
+      <span style="margin-left:16px;">Mode:</span>
+      <label>
+        <input type="radio" name="mode" value="raw" checked />
+        Raw
+      </label>
+      <label style="margin-left:8px;">
+        <input type="radio" name="mode" value="normalized" />
+        Normalized
+      </label>
+    </div>
 
-        <!-- Tooltip for hover interactions -->
-        <div id="tooltip" class="tooltip" style="position:absolute; opacity:0;"></div>
+    <!-- Tooltip for hover interactions -->
+    <div id="tooltip" class="tooltip" style="position:absolute; opacity:0;"></div>
 
   </section>
 
@@ -100,4 +106,5 @@
   <script src="js/views/burst.js"></script>
 
 </body>
+
 </html>
