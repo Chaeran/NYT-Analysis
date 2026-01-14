@@ -64,3 +64,18 @@ section h2 {
   color: #888;
   font-style: italic;
 }
+
+
+/* 1. The Container (The Grid) */
+.dashboard-wrapper {
+  display: grid;
+  /* Creates two columns of equal width */
+  grid-template-columns: 1fr 1fr; 
+  /* Space between the two boxes */
+  gap: 24px; 
+  /* ensure it fits within your main page layout */
+  width: 100%; 
+  box-sizing: border-box;
+  padding: 20px;
+}
+

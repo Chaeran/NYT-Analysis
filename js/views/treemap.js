@@ -42,7 +42,7 @@ function initTreemap(containerSelector) {
 
   const plotTreeMap = function (data) {
     const width = 1600,
-      height = 680;
+      height = 1000;
 
     const x = d3.scaleLinear().domain([0, width]).rangeRound([0, width]);
     const y = d3.scaleLinear().domain([0, height]).rangeRound([0, height]);
