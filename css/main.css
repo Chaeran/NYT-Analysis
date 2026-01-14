@@ -72,10 +72,10 @@ section h2 {
   /* Creates two columns of equal width */
   grid-template-columns: 1fr 1fr; 
   /* Space between the two boxes */
-  gap: 24px; 
+  gap: 10px; 
   /* ensure it fits within your main page layout */
   width: 100%; 
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
 }
 

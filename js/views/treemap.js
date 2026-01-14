@@ -57,7 +57,7 @@ function initTreemap(containerSelector) {
       .attr("height", height)
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;")
       .attr("font-family", "sans-serif")
-      .attr("font-size", "10px");
+      .attr("font-size", "20px");
 
     // 1. Create the hierarchical layout with d3.hierarchy
     // Ref: https://d3js.org/d3-hierarchy/hierarchy
