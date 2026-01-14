@@ -30,72 +30,72 @@
       through sections, keyword relationships, and temporal trends.
     </p>
   </header>
-<div class="dashboard-wrapper">
-  <!-- ===================== -->
-  <!-- Section 1: Section Overview (Master View) -->
-  <!-- ===================== -->
-  <section id="section-context" class="dashboard-box">
-    <h2>Article Distribution by Section</h2>
-    <!-- Section and Author Treemap will be rendered here -->
-    <h3 id="header" onclick="resetZoom()">NYT Archive | All Sections</h1>
-      <div id="treemapArea" class="view-container"></div>
-  </section>
+  <div class="dashboard-wrapper">
+    <!-- ===================== -->
+    <!-- Section 1: Section Overview (Master View) -->
+    <!-- ===================== -->
+    <section id="section-context" class="dashboard-box">
+      <h2>Article Distribution by Section</h2>
+      <!-- Section and Author Treemap will be rendered here -->
+      <h3 id="header" onclick="resetZoom()">NYT Archive | All Sections</h1>
+        <div id="treemapArea" class="view-container"></div>
+    </section>
 
-  <!-- ===================== -->
-  <!-- Section 2: Temporal Trends by Section -->
-  <!-- ===================== -->
-  <section id="section-trends" class="dashboard-box">
-    <h2>Yearly Article Counts by Section</h2>
-    <!-- Yearly bar chart will be rendered here -->
-     <div class="line-controls">
+    <!-- ===================== -->
+    <!-- Section 2: Temporal Trends by Section -->
+    <!-- ===================== -->
+    <section id="section-trends" class="dashboard-box">
+      <h2>Yearly Article Counts by Section</h2>
+      <!-- Yearly bar chart will be rendered here -->
+      <div class="line-controls">
         <label for="section-select">Section:</label>
         <select id="section-select"></select>
-     </div>
-    <div id="yearlySection" class="view-container"></div>
-  </section>
-</div>
-  <!-- ===================== -->
-  <!-- Section 3: Keyword Relationship Network -->
-  <!-- ===================== -->
-  <section id="section-keywords">
-    <h2>Keyword Relationship Network</h2>
-    <!-- Keyword co-occurrence graph will be rendered here -->
-    <label for="color-select">Color nodes by: </label>
-    <select id="color-select">
-      <option value="section">Dominant Section of the Keyword</option>
-      <option value="length">Median Word Count of Articles with the Keyword</option>
-    </select>
-    <div id="keywordGraph" class="view-container"></div>
-  </section>
+      </div>
+      <div id="yearlySection" class="view-container"></div>
+    </section>
 
-  <!-- ===================== -->
-  <!-- Section 4: Keyword Dynamics Over Time -->
-  <!-- ===================== -->
-  <section id="section-burst">
-    <h2>Keyword Dynamics Over Time</h2>
-    <!-- Keyword burst / temporal trend chart will be rendered here -->
-    <div id="burstChart" class="view-container"></div>
-    <!-- Controls for the burst chart -->
-    <div id="burstControls">
-      <label for="keyword-select">Keyword:</label>
-      <select id="keyword-select"></select>
+    <!-- ===================== -->
+    <!-- Section 3: Keyword Relationship Network -->
+    <!-- ===================== -->
+    <section id="section-keywords">
+      <h2>Keyword Relationship Network</h2>
+      <!-- Keyword co-occurrence graph will be rendered here -->
+      <label for="color-select">Color nodes by: </label>
+      <select id="color-select">
+        <option value="section">Dominant Section of the Keyword</option>
+        <option value="length">Median Word Count of Articles with the Keyword</option>
+      </select>
+      <div id="keywordGraph" class="view-container"></div>
+    </section>
 
-      <span style="margin-left:16px;">Mode:</span>
-      <label>
-        <input type="radio" name="mode" value="raw" checked />
-        Raw
-      </label>
-      <label style="margin-left:8px;">
-        <input type="radio" name="mode" value="normalized" />
-        Normalized
-      </label>
-    </div>
+    <!-- ===================== -->
+    <!-- Section 4: Keyword Dynamics Over Time -->
+    <!-- ===================== -->
+    <section id="section-burst">
+      <h2>Keyword Dynamics Over Time</h2>
+      <!-- Keyword burst / temporal trend chart will be rendered here -->
+      <div id="burstChart" class="view-container"></div>
+      <!-- Controls for the burst chart -->
+      <div id="burstControls">
+        <label for="keyword-select">Keyword:</label>
+        <select id="keyword-select"></select>
 
-    <!-- Tooltip for hover interactions -->
-    <div id="tooltip" class="tooltip" style="position:absolute; opacity:0;"></div>
+        <span style="margin-left:16px;">Mode:</span>
+        <label>
+          <input type="radio" name="mode" value="raw" checked />
+          Raw
+        </label>
+        <label style="margin-left:8px;">
+          <input type="radio" name="mode" value="normalized" />
+          Normalized
+        </label>
+      </div>
 
-  </section>
+      <!-- Tooltip for hover interactions -->
+      <div id="tooltip" class="tooltip" style="position:absolute; opacity:0;"></div>
 
+    </section>
+  </div>
   <!-- ===================== -->
   <!-- JavaScript Files -->
   <!-- ===================== -->

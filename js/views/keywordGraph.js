@@ -7,12 +7,35 @@ function initKeywordGraph(containerSelector) {
             const lengthColor = d3.scaleSequential()
                 .domain([0, d3.max(nodes, d => d["median_word_count"])])
                 .interpolator(d3.interpolateRdYlBu);
+            // const sectionColor = d3.scaleOrdinal([
+            //     "#771155", "#AA4488", "#CC99BB", "#114477", "#4477AA",
+            //     "#77AADD", "#117777", "#44AAAA", "#77CCCC", "#117744",
+            //     "#44AA77", "#88CCAA", "#777711", "#AAAA44", "#DDDD77",
+            //     "#774411", "#AA7744", "#DDAA77", "#771122", "#AA4455",
+            //     "#DD7788", "#332288", "#88CCEE", "#882255", "#661100"
+            // ]);
             const sectionColor = d3.scaleOrdinal([
-                "#771155", "#AA4488", "#CC99BB", "#114477", "#4477AA",
-                "#77AADD", "#117777", "#44AAAA", "#77CCCC", "#117744",
-                "#44AA77", "#88CCAA", "#777711", "#AAAA44", "#DDDD77",
-                "#774411", "#AA7744", "#DDAA77", "#771122", "#AA4455",
-                "#DD7788", "#332288", "#88CCEE", "#882255", "#661100"
+                "#771155",
+                "#AA4488",
+                "#CC99BB",
+                "#114477",
+                "#4477AA",
+                "#77AADD",
+                "#117777",
+                "#44AAAA",
+                "#77CCCC",
+                "#117744",
+                "#44AA77",
+                "#88CCAA",
+                "#777711",
+                "#AAAA44",
+                "#DDDD77",
+                "#774411",
+                "#AA7744",
+                "#DDAA77",
+                "#771122",
+                "#AA4455",
+                "#DD7788",
             ]);
             //createSectionLegend(nodes, sectionColor)
             plotNodeLink(nodes, links, timeseriesData, sectionColor, lengthColor, containerSelector);

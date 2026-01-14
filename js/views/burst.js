@@ -5,7 +5,7 @@ let currentKeyword = null;
 
 // 1. SVG layout setup
 const margin = { top: 40, right: 30, bottom: 40, left: 80 };
-const width = 900 - margin.left - margin.right;
+const width = 600;// - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
 
