@@ -9,7 +9,7 @@ const width = 900 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
 
-function initBurst(containerSelector){
+function initBurst(containerSelector) {
   // Main SVG group with margin convention
   const svg = d3
     .select(containerSelector)
@@ -271,7 +271,11 @@ function initBurst(containerSelector){
           tooltip.style("opacity", 0);
         });
     }
-
+    window.addEventListener("keywordchange", (e) => {
+      update(e.detail.value);
+      select.property("value", e.detail.value);
+      console.log("Keyword changed:", e);
+    });
     // 5. Keyword dropdown change handler
     select.on("change", event => {
       const keyword = event.target.value;
@@ -290,6 +294,7 @@ function initBurst(containerSelector){
 }
 
 window.initBurst = initBurst;
+
 // // ---- 0. Global state ----
 // let currentMode = "raw";
 // let currentKeyword = null;
