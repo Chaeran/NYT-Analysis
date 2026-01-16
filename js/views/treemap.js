@@ -35,7 +35,7 @@ function initTreemap(containerSelector) {
     "#AA4455",
     "#DD7788",
   ]);
-
+  window.secCol = color;
   d3.json("data/treedata.json").then((data) => {
     plotTreeMap(data);
   });
